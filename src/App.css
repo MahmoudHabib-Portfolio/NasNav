@@ -1,38 +1,340 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a, a.prod{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a.shop{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+.banner {
+  background: #FFF100 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.73px 2px rgba(0, 0, 0, 0.5019607843);
+  opacity: 1;
+}
+
+.footer {
+  background: #3C3C3B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.73px 2px rgba(0, 0, 0, 0.5019607843);
+  opacity: 1;
+}
+
+.banner-sub {
+  margin: 0 auto;
+  display: block;
+  max-width: 1024px;
+}
+
+.footer-sub {
+  margin: 0 auto;
+  display: block;
+  max-width: 1024px;
+}
+
+.subNav {
+  background: #000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.73px 2px rgba(0, 0, 0, 0.5019607843);
+  opacity: 1;
+}
+
+.borderRight {
+  border-right: 0.25px solid #868686;
+}
+
+.borderLeft {
+  border-left: 0.25px solid #868686;
+}
+
+.borderTop {
+  border-top: 0.25px solid #868686;
+}
+
+.carousel-indicators{
+  position: unset !important;
+  display: contents !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Styling Similar Products ScrollBar */
+body::-webkit-scrollbar {
+  width: 8px;
+  opacity: 1;
+}
+
+.scroll::-webkit-scrollbar {
+  height: 4.5px;
+  opacity: 1;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #FFF200;
+}
+
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #D9D9D9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #542E90;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #542E90;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #542E90;
+  opacity: 0.8;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #542E90;
+  opacity: 0.8;
+}
+
+/* firefox */
+.scroll::-mozilla-scrollbar {
+  height: 4.5px;
+  opacity: 1;
+}
+
+.scroll::-mozilla-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #D9D9D9;
+}
+
+.scroll::-mozilla-scrollbar-thumb {
+  background: #542E90;
+}
+
+.scroll::-mozilla-scrollbar-thumb:hover {
+  background: #542E90;
+  opacity: 0.8;
+}
+
+/* Microsoft-edge */
+.scroll::-ms-scrollbar {
+  height: 4.5px;
+  opacity: 1;
+}
+
+.scroll::-ms-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #D9D9D9;
+}
+
+.scroll::-ms-scrollbar-thumb {
+  background: #542E90;
+}
+
+.scroll::-ms-scrollbar-thumb:hover {
+  background: #542E90;
+  opacity: 0.8;
+}
+
+/* Body Selector */
+span::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+div::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+img::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+button::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+button img::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+a::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+p::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+ul::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+ul li::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+b::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+del::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+input::selection {
+  background-color: rgba(255, 247, 0, 0.5) !important;
+}
+
+/* hide Drawer header */
+.ant-drawer-header{
+  display: none !important;
+}
+
+@media screen and (max-width: 1054px){
+  .banner-sub .gap-x-28 {
+    column-gap: 5rem !important;
+  }
+  .footer-block.flex-row{
+    flex-direction: column !important;
+  }
+  .borderRight {
+    border-right: 0px;
+  }
+  .borderRight {
+    border-bottom: 0.25px solid #868686;
+  }
+  .subscribe{
+    padding-top: 25px;
+  }
+  .Social.justify-start{
+    padding-right: 2rem;
+    justify-content: center !important;
+  }
+  .Social.justify-end{
+    justify-content: center !important;
+  }
+  .Social.pl-12{
+    padding-right: 0em;
+    padding-left: 2rem;
+  }
+  .Social.justify-between{
+    justify-content: center !important;
+  }
+  .subscibe.pl-12{
+    padding-left:0rem !important;
+  }
+  .banner-sub {
+    max-width: 1024px !important;
+  }
+  .addCart.MuiButtonBase-root{
+    padding: 0.8em 2em !important;
+    font-size: 12px !important;
+  }
+  .pickUp.MuiButtonBase-root{
+    padding: 0.8em 2em !important;
+    font-size: 12px !important;
+  }
+  .Cards.flex-row{
+    flex-direction: row !important;
+  }
+  .cardFot.flex-row{
+    flex-direction: row !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.card-title.h5{
+  font-size: 1rem !important;
+  text-align: center !important;
 }
 
-.App-link {
-  color: #61dafb;
+div.card-body{
+  padding: 12px 0px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card{
+  position: relative !important;
+}
+
+@media screen and (max-width: 885px){
+  .banner-sub .flex-row{
+    flex-direction: column !important;
   }
-  to {
-    transform: rotate(360deg);
+  .banner-sub .justify-start{
+    justify-content: center !important;
+  }
+  .banner-sub .justify-end{
+    justify-content: center !important;
+  }
+  .banner-sub{
+    display: block;
+    text-align: center;
+  }
+  .CarCont.flex-row{
+    flex-direction: row !important;
+  }
+  .CarCont .pt-4{
+    padding-top: 2rem !important;
+  }
+  .product-sub.flex-row{
+    flex-direction: column !important;
+  }
+  .pdetails{
+    text-align: left !important;
+  }
+  .rate.flex-row{
+    flex-direction: row !important;
+  }
+  .pPrice.flex-row{
+    flex-direction: row !important;
+  }
+  .sized.flex-row{
+    flex-direction: row !important;
+  }
+  .sized{
+    text-align: left !important;
+  }
+  .colored{
+    text-align: left !important;
+  }
+  .colored.flex-row{
+    flex-direction: row !important;
+  }
+  .quant{
+    text-align: left !important;
+  }
+  .quant.flex-row{
+    flex-direction: row !important;
+  }
+  .action.flex-row{
+    flex-direction: row !important;
+  }
+  .footIcon.flex-row{
+    flex-direction: column !important;
+  }
+  .footIcon .justify-start{
+    justify-content: center !important;
+  }
+  .footIcon .justify-end{
+    justify-content: center !important;
+  }
+  .Cards.flex-row{
+    flex-direction: row !important;
+  }
+  .cardFot.flex-row{
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .Subscribefield .MuiInputBase-root{
+    width: 320px !important;
   }
 }

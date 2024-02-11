@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import Footer from "./Components/Footer/Footer";
+import Banner from "./Components/Header/Banner";
+import SimilarProducts from "./Components/ProductBody/SimilarProducts";
+import ProductBody from './Components/ProductBody/ProductBody';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* Product Array Block */
+const Product = [
+  {id: 0,
+  Name: "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  Price: '9.999',
+  ProductIcon: "../Components/Images/BSImages/SlideOne.jpg"
+}
+];
+
+
+export class App extends Component {
+  constructor(){
+    super();
+    this.state = {product: Product}
+  }
+
+  render() {
+    return (
+      <>
+            <Banner />
+            <ProductBody 
+            Product={this.state.product} 
+            
+            />
+            <SimilarProducts /> 
+            <Footer />
+      </>
+    )
+  }
 }
 
 export default App;

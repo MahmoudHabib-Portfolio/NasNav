@@ -1,0 +1,45 @@
+$primary-color: #fff;
+$second-color: #000;
+$body-margin: 0;
+$banner-background: #FFF100 0% 0% no-repeat padding-box;
+$banner-boxshadow: 0px 0.73px 2px #00000080;
+$banner-opacity: 1;
+$bannerSub-display: block;
+$bannerSub-margin: 0 auto;
+$bannerSub-width: 1024px;
+$subnav-backfround: #000 0% 0% no-repeat padding-box;
+$footer-background: #3C3C3B 0% 0% no-repeat padding-box;
+
+body{
+  margin: $body-margin;
+}
+
+.banner {
+  background: $banner-background;
+  box-shadow: $banner-boxshadow;
+  opacity: $banner-opacity;
+}
+
+.footer{
+  background: $footer-background;
+  box-shadow: $banner-boxshadow;
+  opacity: $banner-opacity;
+}
+
+.banner-sub {
+  margin: $bannerSub-margin;
+  display: $bannerSub-display;
+  max-width: $bannerSub-width;
+}
+
+.footer-sub {
+  margin: $bannerSub-margin;
+  display: $bannerSub-display;
+  max-width: $bannerSub-width;
+}
+
+.subNav{
+  background: $subnav-backfround;
+  box-shadow: $banner-boxshadow;
+  opacity: $banner-opacity;
+}
